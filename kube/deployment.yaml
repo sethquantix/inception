@@ -8,8 +8,7 @@ spec:
     app: wil
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 8888
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -45,7 +44,7 @@ spec:
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
         ports:
-          - containerPort: 8080
+          - containerPort: 8888
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
