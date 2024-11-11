@@ -38,7 +38,7 @@ spec:
         app: wil
     spec:
       containers:
-      - image: wil42/playground:1.0
+      - image: wil42/playground:v1
         imagePullPolicy: Always
         name: wil-app
         resources: {}
