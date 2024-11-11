@@ -19,7 +19,7 @@ metadata:
   labels:
     app: wil
   name: wil
-  namespace: default
+  namespace: dev
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
