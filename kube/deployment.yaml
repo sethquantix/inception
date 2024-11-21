@@ -12,7 +12,7 @@ spec:
       port: 8888
       nodePort: 30010
 ---
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   labels:
