@@ -21,7 +21,7 @@ metadata:
   namespace: dev
 spec:
   progressDeadlineSeconds: 600
-  replicas: 5
+  replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
@@ -37,7 +37,7 @@ spec:
         app: wil
     spec:
       containers:
-      - image: wil42/playground:v2
+      - image: wil42/playground:v1
         imagePullPolicy: Always
         name: wil-app
         resources: {}
